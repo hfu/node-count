@@ -1,0 +1,27 @@
+{
+  "name": "node-count",
+  "version": "1.0.0",
+  "description": "count nodes in planet.osm.pbf for each module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hfu/node-count.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/hfu/node-count/issues"
+  },
+  "homepage": "https://github.com/hfu/node-count#readme",
+  "dependencies": {
+    "@mapbox/tilebelt": "^1.0.1",
+    "@turf/rewind": "^5.1.5",
+    "byline": "^5.0.0",
+    "config": "^3.0.1",
+    "hjson": "^3.1.2"
+  }
+}
