@@ -47,7 +47,7 @@ const count = () => {
       '--output-format=opl,add_metadata=false'
     ], { stdio: ['inherit', 'pipe', 'inherit'] })
     osmium.on('close', () => {
-      dump(dict)
+      dump(dict, count)
       resolve()
     })
     const stream = byline(osmium.stdout)
@@ -63,7 +63,7 @@ const count = () => {
       } else {
         dict[key] = 1
       }
-      if (count % 1000000 === 0) dump(dict, count)
+      if (count % 10000000 === 0) dump(dict, count)
     })
   })
 }
